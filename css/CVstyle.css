@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    background-image: url("/Assets/wp3529442.jpg");
+    font-family: Consolas;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.active,a:hover {
+    color: #8B0000;
+    transition: .5s;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Helvetica, sans-serif;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 25px 5px 25px 5px;
+}
+
+#tabs {
+    float: right;
+    margin-right: 20px;
+}
+
+@media (max-width: 790px){
+    label.logo {
+        font-size: 25px;
+        padding-left: 10px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+.logo {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 50px;
+    min-width: none;
+}
+
+.section {
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: 65vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#form {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 2cm;
+    margin: 1cm auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: black
+}
+
+#form h1 {
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+}
+
+#form h1,h2 {
+    margin-bottom: 10px;
+}
+
+#form p {
+    font-size: 20px;
+    white-space: pre;
+    margin-bottom: 5px;
+}
+
+#form p a {
+    color: blue;
+}
+
+#form p a:hover {
+    color: black;
+}
+
+@media (max-width: 790px){
+    #form h1 {
+        font-size: 17px;
+    }
+
+    #form h2 {
+        font-size: 15px;
+    }
+
+    #form p {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <h1 id="title" >Gamer Survey Form</h1>
+        <p id="description">This survey is for gaming community</p>
+    </div>
+    <form id="survey-form">
+        <div class=" form-group">
+            <label for="name" class="form-prompt">Name</label>
+            <input type="text" id="name" required placeholder="Enter your name"/>
+        </div>
+        <div class="form-group">
+            <label for="email" class="form-prompt">Email</label>
+            <input
+                type="email"
+                id="email"
+                required
+                placeholder="Enter your email"
+            />
+        </div>
+        <div class="form-group">
+            <label for="age" class="form-prompt">Age (optinal)</label>
+            <input
+                type="number"
+                min="10"
+                max="100"
+                id="age"
+                placeholder="Enter your age"
+            />
+        </div>
+        <div class="form-group">
+            <label for="" class="form-prompt">
+                Choose your favorite type of game
+            </label>
+            <select name="favorite" id="fav-game">
+                <option value="strategy" class="option">Strategy</option>
+                <option value="RPG" class="option">RPG</option>
+                <option value="MOBA" class="option">MOBA</option>
+                <option value="FPS" class="option">FPS</option>
+                <option value="sports" class="option">Sports</option>
+                <option value="sandbox" class="option">Sandbox</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="" class="form-prompt">
+                Would you recommend this survey to your friends?
+            </label>
+            <label>
+                <input
+                    type="radio"
+                    value="definitely"
+                    name="recommend"
+                    class="radio-recommend"
+                    checked
+                />
+                Definitely
+            </label>
+            <label>
+                <input
+                    type="radio"
+                    value="maybe"
+                    name="recommend"
+                    class="radio-recommend"
+                    checked
+                />
+                Maybe
+            </label>
+            <label>
+                <input
+                    type="radio"
+                    value="not-Sure"
+                    name="recommend"
+                    class="radio-recommend"
+                    checked
+                />
+                Not Sure
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="places" class="form-prompt">Games that you have played</label>
+            <label>
+                <input type="checkbox" value="csgo" name="games" class="games"/>
+                CSGO
+            </label>
+            <label>
+                <input type="checkbox" value="dota" name="games" class="games"/>
+                Dota
+            </label>
+            <label>
+                <input type="checkbox" value="pupg" name="games" class="games"/>
+                PUPG
+            </label>
+            <label>
+                <input type="checkbox" value="fortnite" name="games" class="games"/>
+                Fortnite
+            </label>
+            <label>
+                <input type="checkbox" value="the sims" name="games" class="games"/>
+                The Sims
+            </label>
+            <label>
+                <input type="checkbox" value="GTA" name="games" class="games"/>
+                GTA
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="comment" class="form-prompt">Any additional comments?</label><br>
+            <textarea
+                name="comments"
+                id="comments"
+                cols="100"
+                rows="10"
+                placeholder="comments..."
+            ></textarea>
+        </div>
+        <button class="submit-button" type="submit">Submit</button>
+    </form>
+</body>
+</html>
