@@ -70,3 +70,16 @@ nav ul li a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+.degree {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+}
+
+.degree-photo {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
